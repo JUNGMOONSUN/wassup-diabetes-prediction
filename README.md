@@ -1,7 +1,6 @@
 # wassup-diabetes-prediction
 
 ### 11조
-
 1. 오세형
 2. 전정현
 3. 정문선
