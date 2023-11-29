@@ -1,2 +1,2 @@
-# wassup-project-diabetes
-wassup-project-diabetes
+# wassup-diabetes-prediction
+wassup-diabetes-prediction
