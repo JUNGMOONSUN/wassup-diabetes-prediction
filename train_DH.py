@@ -10,6 +10,9 @@ from preprocess_DH import get_X, get_y
 from nn_DH import ANN
 from utils_DH import CustomDataset
 from tqdm.auto import tqdm
+import sklearn.metrics as metrics
+from sklearn.metrics import confusion_matrix
+
 
 def train_one_epoch(
   model:nn.Module,
@@ -199,8 +202,37 @@ def main(args):
   col_name = ['D']
   list_df = pd.DataFrame(zip(result), columns=col_name)
   list_df.to_csv("./data/Result.csv", index=False)
+##########
+  
+  Y_test = test_df['D']
+  Y_test.to_csv('./data/Answer.csv')
 
+  result = pd.read_csv('./data/Result.csv')
+  answer = pd.read_csv('./data/Answer.csv')
 
+  #tensor to np.array
+  target_r = result['D']
+  target_a = answer['D']
+
+  cm = confusion_matrix(target_a, target_r)
+  print(cm)
+
+  # Calculate the accuracy.
+  accuracy = metrics.accuracy_score(target_a, target_r)
+
+  # Calculate the precision.
+  precision = metrics.precision_score(target_a, target_r)
+
+  # Calculate the recall.
+  recall = metrics.recall_score(target_a, target_r)
+
+  # Calculate the F1 score.
+  f1_score = metrics.f1_score(target_a, target_r)
+
+  print('Accuracy:', accuracy)
+  print('Precision:', precision)
+  print('Recall:', recall)
+  print('F1 score:', f1_score)
 
 def get_args_parser(add_help=True):
   import argparse
