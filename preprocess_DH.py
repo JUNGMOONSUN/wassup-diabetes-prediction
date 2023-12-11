@@ -9,27 +9,47 @@ from sklearn.preprocessing import StandardScaler, MaxAbsScaler, MinMaxScaler
 ##################################
 
 
-def get_X(df:pd.DataFrame, features:iter=["SEX","AGE_GROUP","BP_LWST","TRIGLYCERIDE","HDL_CHOLE","LDL_CHOLE","HMG","OLIG_PROTE_CD","CREATININE","SGPT_ALT","GAMMA_GTP","SMK_STAT_TYPE_CD","BMI"], scaler= 'standard', scale_columns = None):
+def get_X(
+    df: pd.DataFrame,
+    features: iter = [
+        "SEX",
+        "AGE_GROUP",
+        "BP_LWST",
+        "TRIGLYCERIDE",
+        "HDL_CHOLE",
+        "LDL_CHOLE",
+        "HMG",
+        "OLIG_PROTE_CD",
+        "CREATININE",
+        "SGPT_ALT",
+        "GAMMA_GTP",
+        "SMK_STAT_TYPE_CD",
+        "BMI",
+    ],
+    scaler="standard",
+    scale_columns=None,
+):
     standard = StandardScaler()
     maxabs = MaxAbsScaler()
     minmax = MinMaxScaler()
 
     # df1 = pd.get_dummies(df[features]).to_numpy(dtype=np.float32)
     df1 = pd.get_dummies(df[features])
-    if scale_columns :
-        if Scaler == 'standard':
-          df1[scale_columns] = standard.fit_transform(df1[scale_columns])
-        elif Scaler == 'maxabs':
-          df1[scale_columns] = maxabs.fit_transform(df1[scale_columns])
-        elif Scaler == 'minmax':
+    if scale_columns:
+        if Scaler == "standard":
+            df1[scale_columns] = standard.fit_transform(df1[scale_columns])
+        elif Scaler == "maxabs":
+            df1[scale_columns] = maxabs.fit_transform(df1[scale_columns])
+        elif Scaler == "minmax":
             df1[scale_columns] = minmax.fit_transform(df1[scale_columns])
 
     return df1.to_numpy(dtype=np.float32)
 
-def get_y(df:pd.DataFrame, feature_name = "D"):
-  '''Make the target from a DataFrame.
 
-  Args:
-      df: DataFrame
-  '''
-  return df[feature_name].to_numpy(dtype=np.float32)
+def get_y(df: pd.DataFrame, feature_name="D"):
+    """Make the target from a DataFrame.
+
+    Args:
+        df: DataFrame
+    """
+    return df[feature_name].to_numpy(dtype=np.float32)
