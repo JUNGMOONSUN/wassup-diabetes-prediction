@@ -7,7 +7,7 @@
 정영준
 최세준
 
-##사용 모델
+## 사용 모델
 - XGBClassifier
 - RandomForestClassifier
 - MLPClassifier
