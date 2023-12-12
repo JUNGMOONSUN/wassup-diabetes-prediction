@@ -223,17 +223,6 @@ def main(args):
     loss_func = nn.functional.binary_cross_entropy
 
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
-    # 추가된 부분: 에포크 루프
-    for epoch in range(args.epochs):
-        # 훈련
-        loss = train_one_epoch(model, loss_func, optimizer, dl, device)
-        train_losses_per_epoch.append(loss)
-
-        # 훈련 진행 상황 출력
-        print(f"Epoch [{epoch + 1}/{args.epochs}], Train Loss: {loss:.4f}")
-
-    # 추가된 부분: 에포크당 훈련 손실 그래프 플로팅
-    plot_training_loss(train_losses_per_epoch)
 
     scores = kfold_cross_validate(model, loss_func, device, X_trn, y_trn)
     mean_scores = {k: sum(v) / len(v) for k, v in scores.items()}
