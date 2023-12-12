@@ -7,8 +7,8 @@
 정영준
 최세준
 
-### exam.ipynb
-XGBClassifier, RandomForestClassifier, MLPClassifier
+### XGBClassifier, RandomForestClassifier, MLPClassifier
+exam.ipynb
 
 ### ANN
 python train_DH.python
