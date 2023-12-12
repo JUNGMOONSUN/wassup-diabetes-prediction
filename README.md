@@ -23,14 +23,19 @@ python train_DH.python
 - 따라서 'BLDS'의 수치가 126이 넘어가면 당뇨라고 판단, 새로운 컬럼을 만들어 1을 부여하고 126 미만이면 0으로 처리한다.
 
 - 1. 성별, 나이, 체중 각각 분포
-![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/8aa443c9-7c19-4e9f-808e-e1e13a6eb247)
-![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/5c366e1a-08dc-47c7-917e-2484a5e3bda6)
+  
+  ![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/8aa443c9-7c19-4e9f-808e-e1e13a6eb247)
+
+  ![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/5c366e1a-08dc-47c7-917e-2484a5e3bda6)
 
 - 2. 당뇨인 사람과 아닌 사람의 비율
-![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/3a41190a-b338-494a-8f8b-f2e3f92030a9)
+  
+  ![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/3a41190a-b338-494a-8f8b-f2e3f92030a9)
 
 - 3. 당뇨와 콜레스테롤 수치들의 관계 분포
-![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/521c311d-0301-4ec1-b16e-b67b5866446b)
+  
+  ![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/521c311d-0301-4ec1-b16e-b67b5866446b)
 
 - 4. 당뇨와 간기능검사 수치들의 관계 분포
-![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/23772ab0-669c-429e-94b2-87afbca43d89)
+  
+  ![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/23772ab0-669c-429e-94b2-87afbca43d89)
