@@ -7,8 +7,13 @@
 정영준
 최세준
 
-# exam.ipynb
+### exam.ipynb
 XGBClassifier, RandomForestClassifier, MLPClassifier
 
-# ANN
+### ANN
 python train_DH.python
+
+## EDA
+### 상황 가정 : 건강검진 데이터를 제공 받았으나 전산사의 오류로 당뇨병을 간단하게 판별할 수 있는 공복 혈당 수치의 데이터가 손실됨
+- 이때 나머지 건강검진 데이터를 이용하여 이 사람이 당뇨인지 아닌지를 예측하고 그 확률을 보여주는 모델을 제공하자
+- 모델을 학습시킬 땐 공복혈당 수치 데이터가 손실되지 않았던 예전 데이터를 사용한다고 가정
