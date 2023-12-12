@@ -14,10 +14,10 @@
 - ANN
 
 ### XGBClassifier, RandomForestClassifier, MLPClassifier
-exam.ipynb
+- exam.ipynb
 
 ### ANN_arguparser
-python train_DH.py
+- python train_DH.py
 
 ### ANN_config
 1. python preprocess.py
