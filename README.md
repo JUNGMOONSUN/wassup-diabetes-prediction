@@ -13,6 +13,8 @@
 - MLPClassifier
 - ANN
 
+
+## 결과 확인
 ### XGBClassifier, RandomForestClassifier, MLPClassifier
 - exam.ipynb
 
