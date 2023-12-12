@@ -6,3 +6,9 @@
 정문선
 정영준
 최세준
+
+# exam.ipynb
+XGBClassifier, RandomForestClassifier, MLPClassifier
+
+#ANN
+python train_DH.python
