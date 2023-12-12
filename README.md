@@ -52,3 +52,9 @@
 - 4. 당뇨와 간기능검사 수치들의 관계 분포
   
   ![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/23772ab0-669c-429e-94b2-87afbca43d89)
+
+
+- 5. 타겟인 'D'(=종속변수)와 나머지 피처들이 상관관계를 얼마나 갖는지 파악하기 위해 heatmap 작성
+  
+  ![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/87058c1f-4a42-4fab-b2eb-6de7667ef47a)
+
