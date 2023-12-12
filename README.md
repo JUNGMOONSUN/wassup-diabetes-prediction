@@ -58,3 +58,10 @@
   
   ![image](https://github.com/osh612/wassup-diabetes-prediction/assets/52309060/87058c1f-4a42-4fab-b2eb-6de7667ef47a)
 
+
+### Feature Engineering
+- 종속변수와 상관관계가 아주 낮은 변수들은 학습에 끼치는 영향이 미미할 것이므로 삭제
+- 또한 종속변수와 상관관계가 아닌 독립변수들끼리 상관관계 계수가 높을수록 모델 성능에 영향을 끼칠 수 있으므로 변수들끼리 통합하여 새로운 피처를 만들거나 제거
+- 예를 들어 히트맵에서 HEIGHT, WEIGHT, WAIST 끼리의 상관관계 계수가 높아서 BMI 지수를 새로 만들고 삭제
+- BP_HIGH, BP_LWST 도 서로 상관관계가 높으므로 당뇨와 더 관련이 있는 BP_LWST만 사용
+- 콜레스테롤 데이터 중에 TOT를 제외하면 독립변수들끼리 상관관계가 계수가 그닥 높지 않으므로 TOT만 제거
