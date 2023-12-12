@@ -13,15 +13,17 @@
 - MLPClassifier
 - ANN
 
-
-  ### XGBClassifier, RandomForestClassifier, MLPClassifier
+### XGBClassifier, RandomForestClassifier, MLPClassifier
 exam.ipynb
 
-  
-  ### ANN
-python train_DH.python
+### ANN_arguparser
+python train_DH.py
 
-  
+### ANN_config
+1. python preprocess.py
+2. python eval.py
+3. python train.py
+
   ## EDA
 ### 상황 가정 : 건강검진 데이터를 제공 받았으나 전산사의 오류로 당뇨병을 간단하게 판별할 수 있는 공복 혈당 수치의 데이터가 손실됨
 - 이때 나머지 건강검진 데이터를 이용하여 이 사람이 당뇨인지 아닌지를 예측하고 그 확률을 보여주는 모델을 제공하자
