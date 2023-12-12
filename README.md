@@ -19,12 +19,16 @@
 - exam.ipynb
 
 ### ANN_arguparser
-- python train_DH.py
+```python
+python train_DH.py
+```
 
 ### ANN_config
-1. python preprocess.py
-2. python eval.py
-3. python train.py
+```python
+python preprocess.py
+python eval.py
+python train.py
+```
 
   ## EDA
 ### 상황 가정 : 건강검진 데이터를 제공 받았으나 전산사의 오류로 당뇨병을 간단하게 판별할 수 있는 공복 혈당 수치의 데이터가 손실됨
